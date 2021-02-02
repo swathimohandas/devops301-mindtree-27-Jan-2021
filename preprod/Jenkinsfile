@@ -12,7 +12,7 @@ notify('Started')
 try {
 
 stage('Git-CheckOut') {
-  git branch: 'preprod', url: 'https://github.com/amitvashisttech/devops301-mindtree-27-Jan-2021.git'
+  git branch: 'preprod', url: 'https://github.com/swathimohandas/devops301-mindtree-27-Jan-2021.git'
 }
 
 
@@ -79,7 +79,7 @@ sh 'docker-compose up -d --build'
 
 def notify(status){
     emailext( 
-      to: "amitvashist7@outlook.com",
+      to: "swathimohandas18@gmail.com",
       subject: "${status}: JOB '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
       body: """<p>${status}: JOB '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
                <p> Check the Console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME}[${env.BUILD_NUMBER}]</a></p>""",
