@@ -45,7 +45,7 @@ stage('Build Management') {
      "files": [
        {
         "pattern": "**/*.war",
-         "target": "petclinic-war"
+         "target": "artifactory/webapp/#/artifacts/browse/tree/General/generic-local/petclinic-war"
        }
       ]
 
