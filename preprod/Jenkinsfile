@@ -35,7 +35,7 @@ sh 'mvn package'
 }
 
 stage('SonarQube') {
-  withSonarQubeEnv('Sonar') {
+  withSonarQubeEnv('Sonarqube') {
     sh 'mvn sonar:sonar'
   }
 }
