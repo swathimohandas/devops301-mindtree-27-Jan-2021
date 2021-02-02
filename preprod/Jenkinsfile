@@ -1,6 +1,6 @@
 node {
 // Get Artifactory Server Instance Details
-  def server = Artifactory.server "01"
+  def server = Artifactory.server "Jfrog"
   def buildInfo = Artifactory.newBuildInfo()
    
 
